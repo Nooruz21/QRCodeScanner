@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding =true
+    }
 }
 
 dependencies {
@@ -44,4 +47,8 @@ dependencies {
 
     //scanner
     implementation 'com.google.mlkit:barcode-scanning:17.1.0'
+
+
+    //barcode
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
 }
